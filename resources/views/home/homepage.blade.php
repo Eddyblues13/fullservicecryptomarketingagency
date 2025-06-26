@@ -504,7 +504,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="uk-grid uk-flex uk-flex-center">
                 <div class="uk-width-1-2@m uk-text-center">
                     <h2 style="color:#fff;">Experience more than Trading.</h2>
-                    <p class="uk-text-lead" style="color:#E9E8E8;">The Cytopia Capital Pro trading firm was founded on
+                    <p class="uk-text-lead" style="color:#E9E8E8;">The Fullservicecryptomarketingagency trading firm was
+                        founded on
                         the
                         basis of helping Forex traders get the best possible results.</p>
                     <i class="fas fa-chevron-down uk-text-primary"></i>
@@ -944,7 +945,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="uk-grid" data-uk-grid>
                 <div class="uk-width-1-1 in-offset-bottom-20">
                     <center>
-                        <h2 class="uk-margin-small-bottom" style="color:#fff;">Why choose Cytopia Capital Pro</h2>
+                        <h2 class="uk-margin-small-bottom" style="color:#fff;">Why choose
+                            Fullservicecryptomarketingagency</h2>
                         <p class="uk-text-lead uk-margin-remove-top" style="color:#E9E8E8;">We offer one-click
                             trading experience with 3,000+ world-renowned markets.</p>
                     </center>
@@ -998,7 +1000,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="static/files/img/in-lazy.svg" data-src="/static/files/img/in-profit-icon-5.svg"
                         alt="profit-icon" width="86" height="86" data-uk-img>
                     <h4 class="uk-heading-bullet uk-margin-top" style="color:#fff;">Better and fairer Execution</h4>
-                    <p style="color:#E9E8E8;">This is to say that your trades, executed with Cytopia Capital Pro, will
+                    <p style="color:#E9E8E8;">This is to say that your trades, executed with
+                        Fullservicecryptomarketingagency, will
                         be as
                         good
                         or better than any other retail Crypto Company in the world.</p>
@@ -1529,7 +1532,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 working on the platform, I do not blame them for my losses because I
                                                 lack the knowledge, planning, strategy and discipline that I am
                                                 gradually getting, I fully trust in broker, I am a customer account
-                                                Cytopia Capital Pro and I believe that I will continue to operate and
+                                                Fullservicecryptomarketingagency and I believe that I will continue to
+                                                operate and
                                                 reduce
                                                 my loss over time, it may take months or a year but I will not give
                                                 up, the platform is not complicated but it needs</p>
@@ -1552,7 +1556,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <div class="uk-card-header">
                                         <blockquote>
                                             <p style="color:#fff;">I've just got started with forex and The
-                                                Cytopia Capital Pro have helped me so much. They gave me a free course
+                                                Fullservicecryptomarketingagency have helped me so much. They gave me a
+                                                free course
                                                 and
                                                 Jamie and Luke gave me their direct contact number so they could
                                                 answer all my questions and guide me through everything. I've been
@@ -1609,7 +1614,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                         width="120" style="border-radius:50%; padding-left:20px;">
                                     <div class="uk-card-header">
                                         <blockquote>
-                                            <p style="color:#fff;">I initially found about Cytopia Capital Pro on
+                                            <p style="color:#fff;">I initially found about
+                                                Fullservicecryptomarketingagency on
                                                 TikTok,
                                                 showing on my for you page for about a month, over time i made the
                                                 final decision to try out their cheapest 19.99 package, within the

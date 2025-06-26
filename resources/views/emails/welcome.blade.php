@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet'>
     <!--<![endif]-->
 
-    <title>cytopia Capital Pro</title>
+    <title>Fullservicecryptomarketingagency</title>
 
     <style type='text/css'>
         body {
@@ -160,7 +160,8 @@
                                         <a href=''
                                             style='display: block; border-style: none !important; border: 0 !important;'>
                                             <img width='100' border='0' style='display: block; width: 100%;'
-                                                src="{{{asset('static/logo.png')}}}" alt="cytopia Capital Pro" />
+                                                src="{{{asset('static/logo.png')}}}"
+                                                alt="Fullservicecryptomarketingagency" />
                                         </a>
                                     </td>
                                 </tr>
@@ -182,7 +183,7 @@
                     <tr>
                         <td align='left'
                             style='color: #888888; font-size: 16px; font-family: "Work Sans", Calibri, sans-serif; line-height: 24px;'>
-                            <h2>Welcome to cytopia Capital Pro!</h2>
+                            <h2>Welcome to Fullservicecryptomarketingagency!</h2>
                             <br>
                             <br>
                             {!!$wMessage!!}
@@ -190,7 +191,7 @@
                             <br />
                             <p style='line-height: 24px'>
                                 Kind Regards,<br>
-                                cytopia Capital Pro.
+                                Fullservicecryptomarketingagency.
                             </p>
                         </td>
                     </tr>

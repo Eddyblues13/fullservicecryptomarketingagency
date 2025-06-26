@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> {{ $subject ?? 'cytopia Capital Pro' }}</title>
+    <title> {{ $subject ?? 'Fullservicecryptomarketingagency' }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,10 +66,10 @@
             <p>{{ $subject }},</p>
             <p>{!! nl2br(e($messageBody)) !!}</p>
             <p>Best Regards,</p>
-            <p><strong>cytopia Capital Pro</strong></p>
+            <p><strong>Fullservicecryptomarketingagency</strong></p>
         </div>
         <div class="footer">
-            <p>&copy; {{ date('Y') }} cytopia Capital Pro. All rights reserved.</p>
+            <p>&copy; {{ date('Y') }} Fullservicecryptomarketingagency. All rights reserved.</p>
         </div>
     </div>
 </body>

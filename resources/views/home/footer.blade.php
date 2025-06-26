@@ -88,7 +88,7 @@ window.smartsupp||(function(d) {
                     </div>
                 </div>
                 <div class="uk-width-1-2@m in-copyright-text">
-                    <p>© {{ date('Y') }} Cytopia Capital Pro. All rights reserved.</p>
+                    <p>© {{ date('Y') }} Fullservicecryptomarketingagency. All rights reserved.</p>
                 </div>
                 <div class="uk-width-1-2@m uk-text-right@m in-footer-socials">
                     <a href="#"><i class="fab fa-youtube"></i></a>

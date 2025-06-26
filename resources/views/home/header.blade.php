@@ -5,13 +5,13 @@
     <!-- Standard Meta -->
     <meta charset="utf-8">
     <meta name="description"
-        content="Sign up With Cytopia Capital Pro to join thousands of traders currently benefiting from high leveraged full STP/ECN CFD trading with zero conflict of interest through tier one liquidity.">
-    <meta name="keywords" content="Online Forex, Forex, ECN/STP Broker, @$/7 Support, Cytopia Capital Pro">
-    <meta name="author" content="Cytopia Capital Pro">
+        content="Sign up With Fullservicecryptomarketingagency to join thousands of traders currently benefiting from high leveraged full STP/ECN CFD trading with zero conflict of interest through tier one liquidity.">
+    <meta name="keywords" content="Online Forex, Forex, ECN/STP Broker, @$/7 Support, Fullservicecryptomarketingagency">
+    <meta name="author" content="Fullservicecryptomarketingagency">
     <meta name="viewport" content="">
     <meta name="theme-color" content="#e9e8f0" />
     <!-- Site Properties -->
-    <title>Cytopia Capital Pro - Best Broker in 2025</title>
+    <title>Fullservicecryptomarketingagency - Best Broker in 2025</title>
     <!-- Critical preload -->
     <link rel="preload" href="{{ asset('static/files/new/js/vendors/uikit.min.js') }}" as="script">
     <link rel="preload" href="{{ asset('static/files/new/css/vendors/uikit.min.css') }}" as="style">
