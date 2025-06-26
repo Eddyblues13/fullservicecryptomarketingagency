@@ -1,0 +1,10 @@
+[02-Jun-2025 14:27:40 UTC] PHP Warning:  require(/home/djfgxkudsq/fullservicecryptomarketingagency.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/djfgxkudsq/fullservicecryptomarketingagency.com/public/index.php on line 14
+[02-Jun-2025 14:27:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/djfgxkudsq/fullservicecryptomarketingagency.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/djfgxkudsq/fullservicecryptomarketingagency.com/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/djfgxkudsq/fullservicecryptomarketingagency.com/public/index.php on line 14
+[02-Jun-2025 14:31:12 UTC] PHP Warning:  require(/home/djfgxkudsq/fullservicecryptomarketingagency.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/djfgxkudsq/fullservicecryptomarketingagency.com/public/index.php on line 14
+[02-Jun-2025 14:31:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/djfgxkudsq/fullservicecryptomarketingagency.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/djfgxkudsq/fullservicecryptomarketingagency.com/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/djfgxkudsq/fullservicecryptomarketingagency.com/public/index.php on line 14
