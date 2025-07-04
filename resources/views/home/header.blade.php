@@ -98,7 +98,7 @@
     <!-- Smartsupp Live Chat script -->
     <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
-_smartsupp.key = 'dd5c8d8f757c612fa3e64621ef01c42bb968a1d0';
+_smartsupp.key = '19b12ee1de62b4fa83e330e587391205e71fd2d7';
 window.smartsupp||(function(d) {
   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
   s=d.getElementsByTagName('script')[0];c=d.createElement('script');
