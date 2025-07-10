@@ -16,10 +16,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark text-light d-flex flex-column min-vh-100">
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
 
     <div class="container d-flex flex-column align-items-center justify-content-center text-center py-5 my-auto">
-        <div class="card bg-black border-danger shadow p-4" style="max-width: 600px;">
+        <div class="card bg-black border-danger shadow p-4 text-white" style="max-width: 600px;">
             <div class="card-body">
                 <div class="mb-4">
                     <i class="fa-solid fa-ban fa-4x text-danger"></i>
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <footer class="bg-black text-center text-light py-3 mt-auto">
+    <footer class="bg-black text-center text-white py-3 mt-auto">
         <div class="container">
             <small>© 2022 Fullservicecryptomarketingagency. All rights reserved.</small>
         </div>
