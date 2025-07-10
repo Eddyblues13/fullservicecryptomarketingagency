@@ -115,33 +115,31 @@
                                             <h5 class="mb-0">
                                                 <span id="statusBadge"
                                                     class="badge {{ $user->needs_upgrade ? 'badge-danger' : 'badge-success' }}">
-                                                    {{ $user->needs_upgrade ? 'Upgrade Required' : 'Account Active' }}
+                                                    {{ $user->needs_upgrade ? 'Blocked' : 'Unblocked' }}
                                                 </span>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Toggle Upgrade Status Button -->
+                                <!-- Toggle Block/Unblock Button -->
                                 <div class="p-3 border row text-light">
                                     <div class="col-md-4 border-right">
                                         <h5>Change Status</h5>
                                     </div>
                                     <div class="col-md-8 d-flex align-items-center">
                                         <button id="toggleUpgradeBtn"
-                                            class="btn {{ $user->needs_upgrade ? 'btn-success' : 'btn-warning' }}"
+                                            class="btn {{ $user->needs_upgrade ? 'btn-success' : 'btn-danger' }}"
                                             data-current-state="{{ $user->needs_upgrade ? '1' : '0' }}">
-                                            <i
-                                                class="fas {{ $user->needs_upgrade ? 'fa-check-circle' : 'fa-exclamation-triangle' }}"></i>
-                                            {{ $user->needs_upgrade ? 'Approve Account' : 'Require Upgrade' }}
+                                            <i class="fas {{ $user->needs_upgrade ? 'fa-unlock' : 'fa-ban' }}"></i>
+                                            {{ $user->needs_upgrade ? 'Unblock' : 'Block' }}
                                         </button>
-                                        <div id="loadingSpinner" class="spinner-border text-primary ml-2 d-none"
+                                        <div id="loadingSpinner" class="spinner-border text-primary ms-2 d-none"
                                             role="status">
-                                            <span class="sr-only">Loading...</span>
+                                            <span class="visually-hidden">Loading...</span>
                                         </div>
                                     </div>
                                 </div>
-
 
 
                                 <div class="col-md-3">
