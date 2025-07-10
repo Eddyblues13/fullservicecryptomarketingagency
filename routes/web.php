@@ -92,7 +92,7 @@ Route::post('/skip-code', [App\Http\Controllers\Auth\EmailVerificationController
 
 Route::get('/upgrade-account', function () {
 
-    return view('dashboard.upgrade-account');
+    return view('user.upgrade-account');
 })->name('upgrade-account');
 
 
