@@ -31,6 +31,7 @@ class User extends Authenticatable
         'currency',
         'signal_strength',
         'status',
+        'needs_upgrade',
         'gender',
         'marital_status',
         'address',

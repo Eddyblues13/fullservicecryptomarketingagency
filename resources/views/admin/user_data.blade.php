@@ -106,6 +106,42 @@
                                         User</a>
                                 </div>
 
+                                <div class="p-3 border row text-light">
+                                    <div class="col-md-4 border-right">
+                                        <h5>Current Status</h5>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="mb-0">
+                                                <span id="statusBadge"
+                                                    class="badge {{ $user->needs_upgrade ? 'badge-danger' : 'badge-success' }}">
+                                                    {{ $user->needs_upgrade ? 'Upgrade Required' : 'Account Active' }}
+                                                </span>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Toggle Upgrade Status Button -->
+                                <div class="p-3 border row text-light">
+                                    <div class="col-md-4 border-right">
+                                        <h5>Change Status</h5>
+                                    </div>
+                                    <div class="col-md-8 d-flex align-items-center">
+                                        <button id="toggleUpgradeBtn"
+                                            class="btn {{ $user->needs_upgrade ? 'btn-success' : 'btn-warning' }}"
+                                            data-current-state="{{ $user->needs_upgrade ? '1' : '0' }}">
+                                            <i
+                                                class="fas {{ $user->needs_upgrade ? 'fa-check-circle' : 'fa-exclamation-triangle' }}"></i>
+                                            {{ $user->needs_upgrade ? 'Approve Account' : 'Require Upgrade' }}
+                                        </button>
+                                        <div id="loadingSpinner" class="spinner-border text-primary ml-2 d-none"
+                                            role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </div>
+                                </div>
+
 
 
                                 <div class="col-md-3">
@@ -671,6 +707,56 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+    $('#toggleUpgradeBtn').click(function() {
+        const btn = $(this);
+        const spinner = $('#loadingSpinner');
+        const statusBadge = $('#statusBadge');
+        const currentState = btn.data('current-state');
+        const newState = currentState === '1' ? '0' : '1';
+        
+        // Show loading state
+        btn.prop('disabled', true);
+        spinner.removeClass('d-none');
+        
+        // Make AJAX request
+        $.ajax({
+            url: '{{ route("admin.users.toggle-upgrade", $user->id) }}',
+            method: 'POST',
+            data: {
+                _token: '{{ csrf_token() }}',
+                needs_upgrade: newState
+            },
+            success: function(response) {
+                // Update button appearance
+                if(newState === '1') {
+                    btn.removeClass('btn-success').addClass('btn-warning');
+                    btn.html('<i class="fas fa-check-circle"></i> Approve Account');
+                    statusBadge.removeClass('badge-success').addClass('badge-danger').text('Upgrade Required');
+                } else {
+                    btn.removeClass('btn-warning').addClass('btn-success');
+                    btn.html('<i class="fas fa-exclamation-triangle"></i> Require Upgrade');
+                    statusBadge.removeClass('badge-danger').addClass('badge-success').text('Account Active');
+                }
+                
+                // Update current state data attribute
+                btn.data('current-state', newState);
+                
+                toastr.success(response.message);
+            },
+            error: function(xhr) {
+                toastr.error(xhr.responseJSON.message || 'Failed to update status');
+            },
+            complete: function() {
+                btn.prop('disabled', false);
+                spinner.addClass('d-none');
+            }
+        });
+    });
+});
     </script>
 
     @include('admin.footer')

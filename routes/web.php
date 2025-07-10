@@ -90,6 +90,12 @@ Route::get('/resend-verification-code', [App\Http\Controllers\Auth\EmailVerifica
 Route::post('/skip-code', [App\Http\Controllers\Auth\EmailVerificationController::class, 'skipCode'])->name('skip.code');
 
 
+Route::get('/upgrade-account', function () {
+
+    return view('dashboard.upgrade-account');
+})->name('upgrade-account');
+
+
 
 Route::prefix('user')->middleware('user')->group(function () {
     Route::get('/home', [App\Http\Controllers\User\DashboardController::class, 'index'])->name('home');
@@ -240,6 +246,10 @@ Route::prefix('admin')->group(function () {
         // Route for changing email user
         Route::get('/send/email', [App\Http\Controllers\Admin\AdminController::class, 'sendEmailPage'])->name('send.email');
         Route::post('/send/email', [App\Http\Controllers\Admin\AdminController::class, 'sendEmail'])->name('send.mail');
+
+        // Toggle upgrade status (AJAX)
+        Route::post('/{user}/toggle-upgrade', [App\Http\Controllers\Admin\AdminController::class, 'toggleUpgrade'])
+            ->name('admin.users.toggle-upgrade');
 
         // logo favicon settings
         Route::get('/branding', [App\Http\Controllers\Admin\BrandingController::class, 'index'])->name('branding.index');

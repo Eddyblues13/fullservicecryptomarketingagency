@@ -807,4 +807,32 @@ class AdminController extends Controller
             ]);
         }
     }
+
+
+
+    public function toggleUpgrade(Request $request, User $user)
+    {
+        try {
+            // Toggle the current status
+            $user->needs_upgrade = !$user->needs_upgrade;
+            $user->save();
+
+            return response()->json([
+                'success' => true,
+                'message' => $user->needs_upgrade
+                    ? 'User marked as needing upgrade'
+                    : 'User account approved successfully',
+                'needs_upgrade' => $user->needs_upgrade,
+                'new_status_text' => $user->needs_upgrade ? 'Upgrade Required' : 'Account Active',
+                'new_button_text' => $user->needs_upgrade ? 'Approve Account' : 'Require Upgrade'
+            ]);
+        } catch (\Exception $e) {
+            \Log::error("Failed to toggle upgrade status for user {$user->id}: " . $e->getMessage());
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to update user status'
+            ], 500);
+        }
+    }
 }

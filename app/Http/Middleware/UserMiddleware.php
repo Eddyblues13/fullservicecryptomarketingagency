@@ -34,6 +34,12 @@ class UserMiddleware
         // if ($user->user_status !== '1') {
         //     return redirect()->route('user_verify')->with('error', 'Your account needs verification.');
         // }
+        if (Auth::check() && Auth::user()->needs_upgrade) {
+            // Exclude the upgrade account route and logout route from redirect
+            if (!$request->is('upgrade-account') && !$request->is('logout')) {
+                return redirect()->route('upgrade-account');
+            }
+        }
 
         return $next($request);
     }
